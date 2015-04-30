@@ -23,7 +23,7 @@ public class ControllerManipuladorArquivo {
 
     }
 
-    static final String PATH = "C:/Projetos/roteirizacao/arquivos/src/arquivos/";
+    static final String PATH = "D:/Projetos/roteirizacao/arquivos/src/arquivos/";
 
     public String[] leitor(String file) {
         String[] vmLinhas;
