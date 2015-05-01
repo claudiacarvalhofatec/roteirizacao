@@ -1,11 +1,7 @@
 #Sistema de Roteirização
 
-#Descrição
-Programado em Java, este sistema tende à solucionar as as necesidades da equipe de Logistica da FATEC Zona Leste.
+#30/04/2015 - Objetivo deste desenvolvimento
 
-#30/04/2015
-Este projeto é um trabalho acadêmico de Engenharia de Software II da FATEC Zona Leste. 
+Sendo desenvolvido em java, este sistema tende à solucionar as necesidades dos professores de Logistica da FATEC Zona Leste.
 
-As pessoas envolvidas no projeto são:
-
-
+Este projeto é um trabalho acadêmico de Engenharia de Software II da FATEC Zona Leste, os alunos envolvidos são os contribuintes deste projeto. Para mais informações e contatos, acesse nossos perfis.
