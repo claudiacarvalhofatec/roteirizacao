@@ -67,11 +67,11 @@ public class FormConsulta extends JInternalFrame {
         table.setBounds(10, 97, 390, 305);
         contentPane.add(table);
 
-        btnExportar = new JButton("EXPORTAR");
+        btnExportar = new JButton("Exportar");
         btnExportar.setBounds(55, 425, 105, 23);
         contentPane.add(btnExportar);
 
-        btnSair = new JButton("SAIR");
+        btnSair = new JButton("Sair");
         btnSair.setBounds(235, 425, 105, 23);
         contentPane.add(btnSair);
     }

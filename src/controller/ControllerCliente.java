@@ -5,6 +5,9 @@
  */
 package controller;
 
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import model.Cliente;
 
 /**
@@ -52,8 +55,11 @@ public class ControllerCliente {
             buffer.append(objCliente.getSexta());
             buffer.append(";");
             buffer.append(objCliente.getSabado());
-
-            ma.escritor("clientes.csv", buffer.toString());
+            try {
+                ma.escritor("clientes.csv", buffer.toString());
+            } catch (IOException ex) {
+                ex.getStackTrace();
+            }
 
             return objCliente;
         }

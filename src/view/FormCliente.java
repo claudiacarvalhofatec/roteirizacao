@@ -193,17 +193,17 @@ public class FormCliente extends JInternalFrame {
         checkDomingo.setBounds(154, 350, 97, 23);
         contentPane.add(checkDomingo);
 
-        btnSalvar = new JButton("SALVAR");
+        btnSalvar = new JButton("Salvar");
         btnSalvar.setForeground(Color.RED);
         btnSalvar.setBounds(53, 424, 89, 23);
         contentPane.add(btnSalvar);
 
-        btnLimpar = new JButton("LIMPAR");
+        btnLimpar = new JButton("Limpar");
         btnLimpar.setForeground(Color.RED);
         btnLimpar.setBounds(154, 424, 89, 23);
         contentPane.add(btnLimpar);
 
-        btnSair = new JButton("SAIR");
+        btnSair = new JButton("Sair");
         btnSair.setForeground(Color.RED);
         btnSair.setBounds(253, 424, 89, 23);
         contentPane.add(btnSair);

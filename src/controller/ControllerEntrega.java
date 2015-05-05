@@ -5,40 +5,46 @@
  */
 package controller;
 
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import model.Cliente;
 import model.Entrega;
 
 /**
- * 
+ *
  * @author Samsumg
  */
 public class ControllerEntrega {
 
-	public Entrega salvarEntrega(Entrega objEntrega) {
+    public Entrega salvarEntrega(Entrega objEntrega) {
 
-		if (validacaoObjeto(objEntrega)) {
-			ControllerManipuladorArquivo ma = new ControllerManipuladorArquivo();
+        if (validacaoObjeto(objEntrega)) {
+            ControllerManipuladorArquivo ma = new ControllerManipuladorArquivo();
 
-			StringBuilder buffer = new StringBuilder();
+            StringBuilder buffer = new StringBuilder();
 
-			buffer.append(objEntrega.getClienteId());
-			buffer.append(";");
-			buffer.append(objEntrega.getPeso());
-			buffer.append(";");
-			buffer.append(objEntrega.getQtdePaletes());
-			buffer.append(";");
-			buffer.append(objEntrega.getVolume());
-			buffer.append(";");
-			buffer.append(objEntrega.getDataEntrega());
+            buffer.append(objEntrega.getClienteId());
+            buffer.append(";");
+            buffer.append(objEntrega.getPeso());
+            buffer.append(";");
+            buffer.append(objEntrega.getQtdePaletes());
+            buffer.append(";");
+            buffer.append(objEntrega.getVolume());
+            buffer.append(";");
+            buffer.append(objEntrega.getDataEntrega());
+            try {
+                ma.escritor("entregas.csv", buffer.toString());
+            } catch (IOException ex) {
+                ex.getStackTrace();
+            }
 
-			ma.escritor("entregas.csv", buffer.toString());
+            return objEntrega;
+        }
+        return null;
+    }
 
-			return objEntrega;
-		}
-		return null;
-	}
-
-	private boolean validacaoObjeto(Entrega objEntrega) {
-		return true;
-	}
+    private boolean validacaoObjeto(Entrega objEntrega) {
+        return true;
+    }
 }

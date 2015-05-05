@@ -161,17 +161,17 @@ public class FormEntregas extends JInternalFrame {
         lblM.setBounds(303, 257, 46, 14);
         contentPane.add(lblM);
 
-        btnRegistrar = new JButton("REGISTRAR");
+        btnRegistrar = new JButton("Registrar");
         btnRegistrar.setForeground(Color.RED);
         btnRegistrar.setBounds(10, 336, 114, 23);
         contentPane.add(btnRegistrar);
 
-        btnLimpar = new JButton("LIMPAR");
+        btnLimpar = new JButton("Limpar");
         btnLimpar.setForeground(Color.RED);
         btnLimpar.setBounds(157, 336, 106, 23);
         contentPane.add(btnLimpar);
 
-        btnSair = new JButton("SAIR");
+        btnSair = new JButton("Fechar");
         btnSair.setForeground(Color.RED);
         btnSair.setBounds(291, 336, 101, 23);
         contentPane.add(btnSair);

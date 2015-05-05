@@ -365,17 +365,17 @@ public class FormMotorista extends JInternalFrame {
         lblEstadoDoLicenciamento.setBounds(370, 322, 165, 14);
         contentPane.add(lblEstadoDoLicenciamento);
 
-        btnSalvar = new JButton("SALVAR");
+        btnSalvar = new JButton("Salvar");
         btnSalvar.setForeground(Color.RED);
         btnSalvar.setBounds(49, 269, 89, 23);
         contentPane.add(btnSalvar);
 
-        btnLimpar = new JButton("LIMPAR");
+        btnLimpar = new JButton("Limpar");
         btnLimpar.setForeground(Color.RED);
         btnLimpar.setBounds(175, 269, 89, 23);
         contentPane.add(btnLimpar);
 
-        btnSair = new JButton("SAIR");
+        btnSair = new JButton("Fechar");
         btnSair.setForeground(Color.RED);
         btnSair.setBounds(113, 345, 89, 23);
         contentPane.add(btnSair);
@@ -422,7 +422,9 @@ public class FormMotorista extends JInternalFrame {
                 objMotorista.setComprimento((textComprimento.getText()));
                 objMotorista.setVolume((textVolume.getText()));
                 objMotorista.setLargura((textLargura.getText()));
-                // objMotorista.setEstado(textEstado.getText());
+                objMotorista.setCarroceria((String) comboCarroceria.getSelectedItem());
+                objMotorista.setEstado((String) comboEstado.getSelectedItem());
+                objMotorista.setTipoVeiculo((String) comboTipoVeiculo.getSelectedItem());
                 objMotorista.setCidade(textCidade.getText());
 
                 // Envia para o Controller Tratar e salvar as informações.
@@ -449,7 +451,6 @@ public class FormMotorista extends JInternalFrame {
                 comboCarroceria.setSelectedIndex(0);
                 comboEstado.setSelectedIndex(0);
                 comboTipoVeiculo.setSelectedIndex(0);
-                // textEstado.setText("");
                 textCidade.setText("");
             }
         });
