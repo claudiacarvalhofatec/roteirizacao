@@ -1,6 +1,7 @@
 #Sistema de Roteirização
 
-#30/04/2015 - Objetivo deste desenvolvimento
+#Objetivos
+- 30/04/2015
 
 Sendo desenvolvido em java, este sistema tende à solucionar as necesidades dos professores de Logistica da FATEC Zona Leste.
 
